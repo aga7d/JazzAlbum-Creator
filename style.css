@@ -1,9 +1,12 @@
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 * {
@@ -20,8 +23,13 @@ input:focus {
 }
 header {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 30px;
   width: 80vw;
@@ -46,6 +54,8 @@ header div {
   position: absolute;
   left: 50%;
   bottom: 10px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 80vw;
   height: 35vh;
@@ -55,10 +65,13 @@ header div {
   width: 100%;
   cursor: pointer;
 }
+
 .blk {
   height: 60%;
   position: absolute;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (4% 5.5% 2.5% 5.5% 8% 5.5% 2.5% 5.5% 2.5% 5.5% 3%) [2];
   grid-template-columns: repeat(
     2,
     4% 5.5% 2.5% 5.5% 8% 5.5% 2.5% 5.5% 2.5% 5.5% 3%
@@ -67,7 +80,10 @@ header div {
 }
 .white {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .blk div {
@@ -79,33 +95,53 @@ header div {
   background-color: rgb(207, 132, 102);
 }
 #db3_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: db3;
 }
 #eb3_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
   grid-area: eb3;
 }
 #gb3_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
   grid-area: gb3;
 }
 #ab3_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
   grid-area: ab3;
 }
 #bb3_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 10;
   grid-area: bb3;
 }
 #db4_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 13;
   grid-area: db4;
 }
 #eb4_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 15;
   grid-area: eb4;
 }
 #gb4_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 17;
   grid-area: gb4;
 }
 #ab4_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 19;
   grid-area: ab4;
 }
 #bb4_cont {
+  -ms-grid-row: 1;
+  -ms-grid-column: 21;
   grid-area: bb4;
 }
 
@@ -116,6 +152,7 @@ header div {
   margin: 3vh auto 0 auto;
   width: 45vh;
   height: 45vh;
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(100, 100, 100, 0.205);
   box-shadow: 3px 3px 2px 1px rgba(100, 100, 100, 0.205);
 }
 #album {
@@ -136,6 +173,8 @@ header div {
   position: absolute;
   top: 50%;
   left: 10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 form {
@@ -157,5 +196,9 @@ input {
 @media (max-width: 400px) {
   .keys {
     width: 95vw;
+  }
+  .cover_board {
+    width: 40vh;
+    height: 40vh;
   }
 }

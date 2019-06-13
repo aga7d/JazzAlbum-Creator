@@ -52,7 +52,7 @@ window.addEventListener("load", () => {
   };
 
   const playNote = element => {
-    element.parentNode.style.backgroundColor = "rgb(148, 57, 57)";
+    element.parentNode.style.backgroundColor = "#943939";
     element.currentTime = 0.9;
     element.play();
     createRandomShape();
@@ -84,6 +84,12 @@ window.addEventListener("load", () => {
   });
 
   pianoKeys.forEach((key, index) => {
+    key.addEventListener("touchstart", () => {
+      key.style.backgroundColor = "#943939";
+    });
+    key.addEventListener("touchend", () => {
+      key.style.backgroundColor = setBaseColor(notes[index]);
+    });
     key.addEventListener("mousedown", () => {
       playNote(notes[index]);
     });
