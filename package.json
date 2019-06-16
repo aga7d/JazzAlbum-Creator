@@ -1,0 +1,25 @@
+{
+  "name": "jazz_creator",
+  "version": "1.0.0",
+  "description": "AlbumCover Creator is a simple app that lets you create your 60's jazz album cover while playing piano. Be creative and [start improvising!](https://aga7d.github.io/JazzAlbum-Creator \"AlbumCover-Creator Page\")",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aga7d/JazzAlbum-Creator.git"
+  },
+  "author": "Agnieszka Dabrowska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aga7d/JazzAlbum-Creator/issues"
+  },
+  "homepage": "https://github.com/aga7d/JazzAlbum-Creator#readme",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5"
+  }
+}
