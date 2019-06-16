@@ -4,7 +4,7 @@
   "description": "AlbumCover Creator is a simple app that lets you create your 60's jazz album cover while playing piano. Be creative and [start improvising!](https://aga7d.github.io/JazzAlbum-Creator \"AlbumCover-Creator Page\")",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist"
+    "build": "babel src -d docs"
   },
   "repository": {
     "type": "git",
